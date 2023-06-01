@@ -16,8 +16,6 @@ python3 <filename>.py
 - 我只有這台筆電
 - python語法簡單明瞭
 
-聯絡號碼: 0916-303325
-
 2. 執行方式
 ```bash
 $ python3 <檔案名稱>.py
@@ -30,10 +28,6 @@ $ python3 <檔案名稱>.py
 1. 0 1 1 0 0 1 1 1 1 0
 
 以上的測資皆使用python程式(generate-test.py)產生的，其中0和1為隨機產生的。
-
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
 
 4. 第一支IDS中我使用的方法為利用遞迴的方式對新的state呼叫Depth Limited Search函數, 產生一顆recursion tree，所使用的資料結構為Tree.
 同時，我也創造了一個list，記載這先前拜訪過的盤面狀態，若發現目前的盤面之前有拜訪過的話，則不再繼續往下遞迴，因為再往下只會產生同樣的pattern。\

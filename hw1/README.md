@@ -5,20 +5,18 @@
 - 2020 Macbook Air M1
 - python3 3.11.2
 - 套件和環境管理： poetry, 
-下載poetry並在terminal作業路徑中執行
+安裝需要的dependencies
 ```bash
-poetry install
+pip install -r requirements.txt
 ```
 執行檔案方式為
 ```bash
-poetry run python <filename>.py
+python <filename>.py
 ```
-若不使用poetry也行，但需確保python下載numpy和pandas套件
 
 使用原因:
 - 我只有這台筆電
 - python語法簡單明瞭
-- 允许自己declare想要的library，且提供了一个锁定文件以确保可重复安装。
 
 2. 我使用 sigmoid 作为这道题的激活函数。
 对数据集进行 100000 次训练后，均方误差如下：
@@ -28,10 +26,6 @@ poetry run python <filename>.py
 ```bash
 python3 1-neuron-sigmoid.py 
 ```
-或
-```bash
-poetry run python 1-neuron-sigmoid.py
-```
 
 3. 我选择 tanh 作为替代激活函数，训练和测试数据集与上面的问题相同。執行100000 次训练后，结果是：
 訓練資料之均方误差: 7.9758120854022225
@@ -39,10 +33,6 @@ poetry run python 1-neuron-sigmoid.py
 執行方法: 
 ```bash
 python3 1-neuron-tanh.py
-```
-或
-```bash
-poetry run python 1-neuron-tanh.py
 ```
 因此，这个激活函数比上一个问题中使用的 sigmoid函数稍微好一些。
 
@@ -80,10 +70,6 @@ def backward_propagation(X, y, hidden_layer_output, output_layer_output, weights
 ```bash
 python3 2-neurons-sigmoid.py
 ```
-或
-```bash
-poetry run python 2-neurons-sigmoid.py
-```
 
 6. 這次使用leaky relu的activation function訓練資料，執行100000 次训练后，得出
 訓練資料之均方误差: 1.5856206188302047
@@ -91,10 +77,6 @@ poetry run python 2-neurons-sigmoid.py
 執行方法:
 ```bash
 python3 2-neurons-leaky-relu.py
-```
-或
-```bash
-poetry run python 2-neurons-leaky-relu.py
 ```
 照輸出的均方误差數據，leaky relu activation function有比原本sigmoid好
 
@@ -132,10 +114,6 @@ def backward_propagation(X, y, hidden_layer_output, output_layer_output, weights
 執行方法: 
 ```bash
 python3 3-neurons-sigmoid.py
-```
-或
-```bash
-poetry run python 3-neurons-sigmoid.py
 ```
     
 9. 
@@ -190,8 +168,4 @@ train_sol = np.array([[0.03759999, 0.01380555, 0.03678392]).T
 執行方法: 
 ```bash
 python3 area.py
-```
-或
-```bash
-poetry run python area.py
 ```
