@@ -38,7 +38,7 @@ python3 1-neuron-tanh.py
 
 
 4. 两个神经元的架構為
-![](https://i.imgur.com/WkYSSbd.png)
+![](4.png)
 其中其后向传播函数backward propagation function可以写成
 ```python!
 def backward_propagation(X, y, hidden_layer_output, output_layer_output, weights1, weights2, bias1, bias2):
@@ -82,7 +82,7 @@ python3 2-neurons-leaky-relu.py
 
 
 7. 若使用三個神經元，神經元架構如下
-![](https://i.imgur.com/UShaVZN.png)
+![](7.png)
 因跟前一題一樣為二層的神經元架構，因此backward propagation的函數皆一樣。不同的是weights權重的矩陣大小（第一層weights為10x2，第二層為2x1），因此三層神經元架構一樣為
 ```python!
 def backward_propagation(X, y, hidden_layer_output, output_layer_output, weights1, weights2, bias1, bias2):
@@ -161,7 +161,7 @@ train_in = np.array([[0.19832373 0.3791779],
     
 train_sol = np.array([[0.03759999, 0.01380555, 0.03678392]).T
 ```
-![](https://i.imgur.com/2COlZt4.png)
+![](11.png)
 程式碼可以參考area.py檔案，其中訓練出來的數據如下
 訓練資料之均方误差: 3.4337707008928074e-05
 測試資料之均方误差: 3.990658418017117e-05
